@@ -7,7 +7,7 @@ The idea is to re-implement several apps that already resolve a real-world probl
 
 # How to use
 
-Word Count Clone v0.4
+Word Count Clone v0.5
 
 Commands:
 
@@ -28,3 +28,6 @@ python main.py -l 'textfile.ext'
 
 python main.py -w 'textfile.ext'
     Print the number of words in a file
+
+python main.py -m 'textfile.ext'
+    Print the number of characters in a file
