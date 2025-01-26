@@ -1,29 +1,29 @@
-# wc-clone
- A simple word count clone 
+# Word Count Clone
+A simple word count clone 
 
 This little project is the first of many clone-projects i want to do
 
-The idea is to re-implement several apps that already resolve a problem and make muscle memory on programming
+The idea is to re-implement several apps that already resolve a real-world problems and make muscle memory on programming
 
 # How to use
 
-Word Count Clone v0.2
+Word Count Clone v0.3
 
 Commands:
-wcc -v
+python main.py -v
     Print the version of wcc
 
-wcc -h help
+python main.py -h help
     Print instructions for use wcc
 
-wcc -c 'textfile.ext'
+python main.py 'textfile.ext'
+    Print the number of bytes, lines and words in a file
+
+python main.py -c 'textfile.ext'
     Print the number of bytes in a file
 
-wcc -l 'textfile.ext'
+python main.py -l 'textfile.ext'
     Print the number of lines in a file
 
-wcc -m 'textfile.ext'
+python main.py -m 'textfile.ext'
     Print the number of words in a file
-
-wcc 'textfile.ext'
-    Print the number of bytes, lines and words in a file
