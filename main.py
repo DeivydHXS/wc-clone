@@ -3,7 +3,7 @@ import sys
 arg_list = sys.argv
 arg_list_len = len(arg_list)
 
-VERSION = 'Word Count Clone v0.3'
+VERSION = 'Word Count Clone v0.4'
 
 HELP =f'''
 {VERSION}
@@ -24,7 +24,7 @@ wcc -c 'textfile.ext'
 wcc -l 'textfile.ext'
     Print the number of lines in a file
 
-wcc -m 'textfile.ext'
+wcc -w 'textfile.ext'
     Print the number of words in a file
 
 '''
@@ -53,7 +53,11 @@ else:
             with open(filename, 'r') as f:
                 text = f.read()
             print(len(text.splitlines()), filename)
-        case '-m':
-            print('Not implemented yet')
+        case '-w':
+            filename = arg_list[2]
+            text = ''
+            with open(filename, 'r') as f:
+                text = f.read()
+            print(len(text.split()), filename)
         case _:
             print('Not implemented yet')                

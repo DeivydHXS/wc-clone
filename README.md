@@ -7,9 +7,10 @@ The idea is to re-implement several apps that already resolve a real-world probl
 
 # How to use
 
-Word Count Clone v0.3
+Word Count Clone v0.4
 
 Commands:
+
 python main.py -v
     Print the version of wcc
 
@@ -25,5 +26,5 @@ python main.py -c 'textfile.ext'
 python main.py -l 'textfile.ext'
     Print the number of lines in a file
 
-python main.py -m 'textfile.ext'
+python main.py -w 'textfile.ext'
     Print the number of words in a file
