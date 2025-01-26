@@ -1,0 +1,1 @@
+print('Word Count Clone v0.1')
