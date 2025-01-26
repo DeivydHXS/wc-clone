@@ -3,8 +3,7 @@ import sys
 arg_list = sys.argv
 arg_list_len = len(arg_list)
 
-VERSION = 'Word Count Clone v0.5'
-
+VERSION = 'Word Count Clone v0.6'
 HELP =f'''
 {VERSION}
 
@@ -43,7 +42,7 @@ def getFile(filename, mode = 'rb'):
     return text
 
 if arg_list_len < 2 or arg_list_len > 3:
-    print('wcc -h to help')
+    print('python main.py -h to help')
 elif arg_list_len == 2:
     match arg_list[1]:
         case '-v':
@@ -57,21 +56,19 @@ elif arg_list_len == 2:
             print(len(text.splitlines()), len(text.split()), len(btext), filename)
 else:
     filename = arg_list[2]
+    btext = getFile(filename)
+
     match arg_list[1]:
         case '-c':
-            btext = getFile(filename)
             print(len(btext), filename)
         case '-l':
-            btext = getFile(filename)
             text = btext.decode("utf-8")
             print(len(text.splitlines()), filename)
         case '-w':
-            btext = getFile(filename)
             text = btext.decode("utf-8")
             print(len(text.split()), filename)
         case '-m':
-            btext = getFile(filename)
             text = btext.decode("utf-8")
             print(len(text), filename)
         case _:
-            print('wcc -h to help')
+            print('python main.py -h to help')

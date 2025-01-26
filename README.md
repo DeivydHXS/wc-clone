@@ -7,7 +7,7 @@ The idea is to re-implement several apps that already resolve a real-world probl
 
 # How to use
 
-Word Count Clone v0.5
+Word Count Clone v0.6
 
 Commands:
 
