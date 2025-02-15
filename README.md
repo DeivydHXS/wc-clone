@@ -1,10 +1,6 @@
 # Word Count Clone
 A simple word count clone 
 
-This little project is the first of many clone-projects i want to do
-
-The idea is to re-implement several apps that already resolve a real-world problems and make muscle memory on programming
-
 # How to use
 
 Word Count Clone v0.6
@@ -31,3 +27,7 @@ python main.py -w 'textfile.ext'
 
 python main.py -m 'textfile.ext'
     Print the number of characters in a file
+
+You can also use something like cat program to pass data to the program, like the following:
+
+cat textfile.ext | python main.py
